@@ -5,8 +5,9 @@ from django.conf import settings
 from pptx import Presentation
 import google.generativeai as genai
 
-# ✅ Configure Gemini API
-genai.configure(api_key="AIzaSyARicFLSRPml019dtya6Y27EVPCBfHMDdI")
+# Configure Gemini API
+genai.configure(api_key="") 
+#Your API KEY from Google Console Here.
 
 # ✅ Initialize with proper model name
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
